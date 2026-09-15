@@ -13,5 +13,23 @@
         width="560" height="315"
         allowfullscreen>
     </iframe>
+
+    <h2>Exercicio 3 <br>contactos</h2>
+    <form action="/enviar" method="post">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required minlength="3">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="telemovel">Telemóvel:</label>
+            <input type="tel" id="telemovel" name="telemovel" required
+               pattern="[0-9]{9}" title="9 dígitos, sem espaços">
+        </p>
+        <button type="submit">Enviar</button>0
+    </form>
 </body>
 </html>
